@@ -317,9 +317,15 @@ function HeroSection() {
       >
         <div className="flex flex-row justify-between gap-20">
           {/*Left Side - Full Stack Developer Building digital experiences that matter...*/}
-          <motion.div className="flex flex-col justify-center h-full p-40">
+          <motion.div 
+            className="flex flex-col justify-center h-full p-40"
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+          >
             <motion.h2
-              className={`mb-15 text-3xl ${
+              variants={itemsVariants}
+              className={`mb-15 text-3xl uppercase tracking-widest ${
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
@@ -327,55 +333,94 @@ function HeroSection() {
             </motion.h2>
 
             <motion.div
+              variants={textVariants}
               className={`mb-15 text-8xl font-medium ${
                 isDarkMode ? "text-white" : "text-gray-900"
               }`}
             >
               <motion.h2
+                variants={textVariants}
                 className={`mb-7 ${isDarkMode ? "text-white" : "text-gray-900"}`}
               >
                 Building digital
               </motion.h2>
               <motion.h2
+                variants={textVariants}
                 className="mb-7 text-blue-500"
               >
                 experiences
               </motion.h2>
               <motion.h2
+                variants={textVariants}
                 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
               >
                 that matter
               </motion.h2>
             </motion.div>
 
-
-            <motion.p className={`text-base md:text-xl mb-15 ${
-                    isDarkMode ? "text-gray-400" : "text-gray-600"
-                  } mb-8 max-w-xl mx-auto font-light leading-relaxed `}>
-                    I craft beautiful, functional web applications with modern
-                    technologies and thoughtful user experience.
+            <motion.p 
+              variants={textVariants}
+              className={`text-base md:text-xl mb-15 ${
+                isDarkMode ? "text-gray-400" : "text-gray-600"
+              } mb-8 max-w-xl font-light leading-relaxed`}
+            >
+              I craft beautiful, functional web applications with modern
+              technologies and thoughtful user experience.
             </motion.p>
 
-
-            <motion.div className="flex flex-row gap-4">
-                <motion.button className="bg-blue-500 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-600 transition-colors">
-                    View Work
-                </motion.button>
-                <motion.button className="border border-gray-300 px-8 py-4 rounded-full transition-all duration-300 text-gray-600 hover:text-gray-900 hover:border-gray-400">
-                    Get in touch
-                </motion.button>
+            <motion.div 
+              variants={itemsVariants}
+              className="flex flex-row gap-4"
+            >
+              <motion.button 
+                whileHover={{ y: -2, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => scrollToSection("work")}
+                className="bg-blue-500 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-600 transition-colors"
+              >
+                View Work
+              </motion.button>
+              <motion.button 
+                whileHover={{ y: -2, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => scrollToSection("contact")}
+                className={`border ${
+                  isDarkMode ? "border-gray-700" : "border-gray-300"
+                } px-8 py-4 rounded-full transition-all duration-300 ${
+                  isDarkMode
+                    ? "text-gray-400 hover:text-white hover:border-gray-600"
+                    : "text-gray-600 hover:text-gray-900 hover:border-gray-400"
+                }`}
+              >
+                Get in touch
+              </motion.button>
             </motion.div>
 
-            <motion.div className="flex flex-row mt-15 gap-15">
-                <motion.a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                    <FiGithub size={24} />
+            <motion.div 
+              variants={itemsVariants}
+              className="flex flex-row mt-15 gap-15"
+            >
+              {[
+                { icon: FiGithub, href: "https://github.com/yourusername" },
+                { icon: FiLinkedin, href: "https://linkedin.com/in/yourusername" },
+                { icon: Mail, href: "mailto:your@email.com" },
+              ].map((social, index) => (
+                <motion.a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.2, y: -3 }}
+                  whileTap={{ scale: 0.9 }}
+                  className={`p-2 rounded-full transition-colors ${
+                    isDarkMode
+                      ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                  }`}
+                >
+                  <social.icon size={24} />
                 </motion.a>
-                <motion.a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                    <FiLinkedin size={24} />
-                </motion.a>
-                <motion.a href="mailto:your@email.com" target="_blank" rel="noopener noreferrer">
-                    <Mail size={24} />
-                </motion.a>
+              ))}
             </motion.div>
 
           </motion.div>
@@ -383,24 +428,56 @@ function HeroSection() {
           <motion.div></motion.div>
 
           {/*Right Side - Profile Image + Tech Stack*/}
-          <motion.div className="flex flex-col items-center p-30 mt-40">
-            <motion.div className="flex flex-row gap-15 mb-20 text-2xl">
-                <motion.h2 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>React</motion.h2>
-                <motion.h2 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>Node.js</motion.h2>
-                <motion.h2 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>MongoDB</motion.h2>
-                <motion.h2 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>JavaScript</motion.h2>
-
+          <motion.div 
+            className="flex flex-col items-center p-30 mt-40"
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+          >
+            {/* Tech Stack */}
+            <motion.div 
+              variants={itemsVariants}
+              className="flex flex-row gap-15 mb-20 text-2xl"
+            >
+              {[
+                "React",
+                "Node.js", 
+                "MongoDB",
+                "JavaScript"
+              ].map((tech, index) => (
+                <motion.h2
+                  key={index}
+                  variants={textVariants}
+                  whileHover={{ 
+                    scale: 1.1, 
+                    y: -2,
+                    color: isDarkMode ? "#3B82F6" : "#1D4ED8"
+                  }}
+                  className={`cursor-default transition-colors ${
+                    isDarkMode ? "text-white hover:text-blue-400" : "text-gray-900 hover:text-blue-600"
+                  }`}
+                >
+                  {tech}
+                </motion.h2>
+              ))}
             </motion.div>
 
             {/* Profile Image with Decorative Rings */}
-            <motion.div className="relative">
+            <motion.div 
+              variants={imageVariants}
+              className="relative"
+            >
               <div className="relative w-72 h-72 mx-auto">
                 {/* Profile Image */}
                 <motion.div
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ 
+                    scale: 1.05,
+                    rotate: 2,
+                    transition: { duration: 0.3 }
+                  }}
                   className={`w-60 h-60 mx-auto rounded-2xl overflow-hidden border-4 ${
                     isDarkMode ? "border-gray-800" : "border-gray-300"
-                  } shadow-lg relative z-10`}
+                  } shadow-lg relative z-10 cursor-pointer`}
                 >
                   <img
                     src={PROFILE_IMAGE}
