@@ -1,3 +1,6 @@
+// Import the image
+import vibeLearningImage from '../assets/projectImages/vibelearning.png'
+
 export const projects = [{
     id: 1,
     name: "E-Commerce Website",
@@ -11,7 +14,7 @@ export const projects = [{
     id: 2,
     name: "Vibe-Learning Application",
     description: "A modern learning application built with React, Tailwind, and Vite.",
-    image: "https://via.placeholder.com/150",
+    image: vibeLearningImage,
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
     technologies: ["React", "Javascript", "MongoDB", "Tailwind", "OpenAI"],
@@ -32,7 +35,7 @@ export const projects = [{
     image: "https://via.placeholder.com/150",
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
-    technologies: ["Java, JavaSwings, JUnit"],
+    technologies: ["Java", "JavaSwings", "JUnit"],
 },
 {
     id: 5,
@@ -41,7 +44,7 @@ export const projects = [{
     image: "https://via.placeholder.com/150",
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
-    technologies: ["Java, JavaSwings, JUnit"],
+    technologies: ["Java", "JavaSwings", "JUnit"],
 },
 {
     id: 6,
@@ -50,7 +53,7 @@ export const projects = [{
     image: "https://via.placeholder.com/150",
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
-    technologies: ["Java, JavaSwings, JUnit"],
+    technologies: ["Java", "JavaSwings", "JUnit"],
 },
 {
     id: 7,

@@ -1,9 +1,12 @@
 import React from 'react'
 import { useTheme } from '../../context/ThemeContext'
 import { motion } from 'framer-motion'
+import ProjectCard from './components/ProjectCard'
+import { projects } from '../../utils/data'
 
 function ProjectSection() {
     const { isDarkMode } = useTheme()
+
 
     
   return (
@@ -24,7 +27,14 @@ function ProjectSection() {
 
         <p className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg mt-5`}>A collection of projects that showcase my expertise in building modern web applications and solving complex problems.</p>
 
+        <motion.div
+        className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 mt-10 p-10"
+        >
+            {projects?.map((eachProject) => (
+                <ProjectCard key={eachProject.id} project={eachProject} />
+            ))}
 
+        </motion.div>
       
     </div>
   )
