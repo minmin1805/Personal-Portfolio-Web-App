@@ -1,11 +1,14 @@
 // Import the image
 import vibeLearningImage from '../assets/projectImages/vibelearning.png'
+import ailsmWebImage from '../assets/projectImages/ailsmweb.png'
+import carwebImage from '../assets/projectImages/carweb.png'
+import ecommmercewebImage from '../assets/projectImages/ecommerceweb.jpeg'
 
 export const projects = [{
     id: 1,
     name: "E-Commerce Website",
     description: "A modern e-commerce website built with React, Tailwind, and Vite.",
-    image: "https://via.placeholder.com/150",
+    image: ecommmercewebImage,
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
     technologies: ["React", "Javascript", "MongoDB", "Tailwind", "Upstash"],
@@ -23,7 +26,7 @@ export const projects = [{
     id: 3,
     name: "Car Marketplace Website",
     description: "A modern car marketplace website built with React, Tailwind, and Vite.",
-    image: "https://via.placeholder.com/150",
+    image: carwebImage,
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
     technologies: ["React", "Javascript", "Drizzle", "Tailwind"],
@@ -59,7 +62,7 @@ export const projects = [{
     id: 7,
     name: "AI Learning Management System Application",
     description: "A modern AI learning management system built with React, Tailwind, and Vite.",
-    image: "https://via.placeholder.com/150",
+    image: ailsmWebImage,
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
     technologies: ["React", "Javascript", "Drizzle", "Tailwind", "GeminiAI"],
