@@ -17,6 +17,12 @@ function HeroSection() {
     }
   };
 
+  const socialLinks = [
+    { icon: FiGithub, href: "https://github.com/minmin1805" },
+    { icon: FiLinkedin, href: "https://www.linkedin.com/in/doan-m/" },
+    { icon: Mail, href: "mailto:doanlyminh2005@gmail.com" },
+  ]
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -248,11 +254,7 @@ function HeroSection() {
                   variants={itemsVariants}
                   className="flex justify-center gap-4 mb-12"
                 >
-                  {[
-                    { icon: FiGithub, href: "#" },
-                    { icon: FiLinkedin, href: "#" },
-                    { icon: Mail, href: "#" },
-                  ].map((eachSocial, index) => (
+                  {socialLinks.map((eachSocial, index) => (
                     <motion.a
                       key={index}
                       href={eachSocial.href}
@@ -400,11 +402,7 @@ function HeroSection() {
               variants={itemsVariants}
               className="flex flex-row mt-8 lg:mt-15 gap-6 lg:gap-15 justify-center xl:justify-start"
             >
-              {[
-                { icon: FiGithub, href: "https://github.com/yourusername" },
-                { icon: FiLinkedin, href: "https://linkedin.com/in/yourusername" },
-                { icon: Mail, href: "mailto:your@email.com" },
-              ].map((social, index) => (
+              {socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.href}

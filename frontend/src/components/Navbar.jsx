@@ -31,13 +31,12 @@ function Navbar() {
         className="flex items-center gap-2"
         whileHover={{scale: 1.05}}
         >
-            <Code2 size={24} className="text-blue-500"/>
-            <span className={`text-lg font-medium ${isDarkMode ? "text-white" : "text-gray-900"}`}>Personal Portfolio</span>
+            <span className={`text-xl font-medium ${isDarkMode ? "text-white" : "text-gray-900"}`}>Minh Doan</span>
         </motion.div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-4">
-            {["Home", "Skills", "Work", "About", "Contact"].map((eachItem) => (
+            {["Home", "About", "Skills", "Work", "Contact"].map((eachItem) => (
                 <motion.button
                 key={eachItem}
                     whileHover={{y: -2}}

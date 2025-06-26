@@ -8,7 +8,7 @@ export const projects = [{
     image: "https://via.placeholder.com/150",
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
-    technologies: ["React", "Javascript", "MongoDB", "Tailwind, Upstash"],
+    technologies: ["React", "Javascript", "MongoDB", "Tailwind", "Upstash"],
 },
 {
     id: 2,

@@ -12,11 +12,11 @@ function App() {
     <ThemeProvider>
       <div>
         <Navbar />
-        <HeroSection />
-        <AboutMe />
-        <SkillSection />
-        <ProjectSection />
-        <GetInTouch />
+        <div id="home" className="scroll-mt-24"><HeroSection /></div>
+        <div id="about" className="scroll-mt-24"><AboutMe /></div>
+        <div id="skills" className="scroll-mt-24"><SkillSection /></div>
+        <div id="work" className="scroll-mt-24"><ProjectSection /></div>
+        <div id="contact" className="scroll-mt-24"><GetInTouch /></div>
       </div>
     </ThemeProvider>
   )
