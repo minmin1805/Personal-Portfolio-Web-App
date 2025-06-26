@@ -36,7 +36,12 @@ function GetInTouch() {
         isDarkMode ? "bg-gray-950 text-white" : "bg-white text-gray-900"
       } flex flex-col items-center w-full h-full`}
     >
-      <motion.div className="flex gap-1 mt-10 justify-center items-center">
+      <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.6 }}
+      transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
+      className="flex gap-1 mt-10 justify-center items-center">
         <motion.h2
           className={`${isDarkMode ? "text-white" : "text-gray-900"} text-5xl`}
         >
@@ -51,6 +56,11 @@ function GetInTouch() {
       <motion.div className="flex flex-col gap-20 mt-10 justify-center items-center sm:flex-row">
         {/* Send me a message */}
         <motion.div
+        whileHover={{ scale: 1.02 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.6 }}
+        transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
           className={`${
             isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
           } px-10 py-8 border-1  rounded-2xl shadow-lg`}
@@ -107,7 +117,7 @@ function GetInTouch() {
         </motion.div>
 
         {/* Contact information */}
-        <motion.div className="flex-1 min-w-[500px] max-w-md">
+        <motion.div className="flex flex-col items-center min-w-[500px] max-w-lg">
           <motion.h2
             className={`${
               isDarkMode ? "text-white" : "text-gray-900"
@@ -119,6 +129,11 @@ function GetInTouch() {
 
 
               <motion.div
+              whileHover={{ scale: 1.02 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
                 className={`${
                   isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
                 } flex flex-row p-5 border-1 rounded-2xl w-full gap-4 items-center`}
@@ -142,6 +157,11 @@ function GetInTouch() {
             </motion.div>
 
             <motion.div
+            whileHover={{ scale: 1.02 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
               className={`${
                 isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
               } flex flex-row p-5 border-1 rounded-2xl w-full gap-4 items-center`}
@@ -162,6 +182,11 @@ function GetInTouch() {
             </motion.div>
 
             <motion.div
+            whileHover={{ scale: 1.02 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
               className={`${
                 isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
               } flex flex-row p-5 border-1 rounded-2xl w-full gap-4 items-center`}
