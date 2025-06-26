@@ -48,12 +48,12 @@ function GetInTouch() {
         </motion.h2>
       </motion.div>
 
-      <motion.div className="flex flex-row gap-20 mt-10 justify-center items-center">
+      <motion.div className="flex flex-col gap-20 mt-10 justify-center items-center sm:flex-row">
         {/* Send me a message */}
         <motion.div
           className={`${
-            isDarkMode ? "bg-gray-900" : "bg-gray-100"
-          } px-10 py-8 border-1 rounded-2xl shadow-lg`}
+            isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
+          } px-10 py-8 border-1  rounded-2xl shadow-lg`}
         >
           <motion.h2
             className={`${
@@ -120,8 +120,8 @@ function GetInTouch() {
 
               <motion.div
                 className={`${
-                  isDarkMode ? "bg-gray-900" : "bg-gray-100"
-                } flex flex-row p-5 border-1 border-gray-400 rounded-2xl w-full gap-4 items-center`}
+                  isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
+                } flex flex-row p-5 border-1 rounded-2xl w-full gap-4 items-center`}
               >
                 <FaLocationDot className="w-8 h-8" />
                 <motion.div className="flex flex-col">
@@ -143,8 +143,8 @@ function GetInTouch() {
 
             <motion.div
               className={`${
-                isDarkMode ? "bg-gray-900" : "bg-gray-100"
-              } flex flex-row p-5 border-1 border-gray-400 rounded-2xl w-full gap-4 items-center`}
+                isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
+              } flex flex-row p-5 border-1 rounded-2xl w-full gap-4 items-center`}
             >
                 <FaEnvelope className="w-8 h-8" />
                 <motion.div className="flex flex-col">
@@ -163,8 +163,8 @@ function GetInTouch() {
 
             <motion.div
               className={`${
-                isDarkMode ? "bg-gray-900" : "bg-gray-100"
-              } flex flex-row p-5 border-1 border-gray-400 rounded-2xl w-full gap-4 items-center`}
+                isDarkMode ? "bg-gray-900 border-gray-400" : "bg-gray-100 border-gray-200"
+              } flex flex-row p-5 border-1 rounded-2xl w-full gap-4 items-center`}
             >
                 <FaPhone className="w-8 h-8" />
                 <motion.div className="flex flex-col">
