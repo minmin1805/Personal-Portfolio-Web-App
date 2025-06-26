@@ -68,7 +68,7 @@ function HeroSection() {
   return (
     <div>
       <div
-        className={`xl:hidden min-h-screen transition-all duration-500 ${
+        className={`xl:hidden h-full transition-all duration-500 ${
           isDarkMode ? "bg-gray-950 text-white" : "bg-white text-gray-900"
         }`}
       >
@@ -311,7 +311,7 @@ function HeroSection() {
 
       {/*Desktop View*/}
       <div
-        className={`hidden xl:block min-h-screen w-full ${
+        className={`hidden xl:block h-full w-full ${
           isDarkMode ? "bg-gray-950 text-white" : "bg-white text-gray-900"
         }`}
       >

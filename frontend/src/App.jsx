@@ -5,6 +5,7 @@ import HeroSection from './components/Sections/HeroSection'
 import SkillSection from './components/Sections/SkillSection'
 import ProjectSection from './components/Sections/ProjectSection'
 import GetInTouch from './components/Sections/GetInTouch'
+import AboutMe from './components/Sections/AboutMe'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div>
         <Navbar />
         <HeroSection />
+        <AboutMe />
         <SkillSection />
         <ProjectSection />
         <GetInTouch />

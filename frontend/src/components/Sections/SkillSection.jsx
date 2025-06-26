@@ -66,11 +66,11 @@ function SkillSection() {
   return (
     <div className={`flex flex-col items-center w-full h-full ${isDarkMode ? "bg-gray-950 text-white" : "bg-white text-gray-900"}`}>
         <motion.h2
-        className={`${isDarkMode ? "text-white" : "text-gray-900"} text-lg mt-20`}
+        className={`${isDarkMode ? "text-white" : "text-gray-900"} text-lg mt-30`}
         >
             TECHNICAL EXPERTISE
         </motion.h2>
-        <motion.div className="flex flex-row mt-10 ">
+        <motion.div className="flex flex-row mt-5 ">
             <motion.h2
             className={`${isDarkMode ? "text-white" : "text-gray-900"} text-5xl font-medium lg:text-6xl`}
             >
