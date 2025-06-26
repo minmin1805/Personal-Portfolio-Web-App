@@ -84,7 +84,7 @@ function SkillSection() {
             </motion.h2>
 
         </motion.div>
-        <motion.p className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg mt-10 mb-15`}>
+        <motion.p className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg mt-10`}>
                 A comprehensive toolkit for building modern, scalable web applications from concept to deployment.
             </motion.p>
 
