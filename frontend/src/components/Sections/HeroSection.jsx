@@ -68,7 +68,7 @@ function HeroSection() {
   return (
     <div>
       <div
-        className={`lg:hidden min-h-screen transition-all duration-500 ${
+        className={`xl:hidden min-h-screen transition-all duration-500 ${
           isDarkMode ? "bg-gray-950 text-white" : "bg-white text-gray-900"
         }`}
       >
@@ -311,21 +311,21 @@ function HeroSection() {
 
       {/*Desktop View*/}
       <div
-        className={`hidden lg:block h-screen w-full ${
+        className={`hidden xl:block min-h-screen w-full ${
           isDarkMode ? "bg-gray-950 text-white" : "bg-white text-gray-900"
         }`}
       >
-        <div className="flex flex-row justify-between gap-20">
+        <div className="flex flex-col xl:flex-row justify-center xl:justify-between items-center gap-8 xl:gap-20 min-h-screen px-4 lg:px-8">
           {/*Left Side - Full Stack Developer Building digital experiences that matter...*/}
           <motion.div 
-            className="flex flex-col justify-center h-full p-40"
+            className="flex flex-col justify-center w-full xl:w-1/2 p-4 lg:p-8 xl:p-12 mt-20"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
           >
             <motion.h2
               variants={itemsVariants}
-              className={`mb-15 text-3xl uppercase tracking-widest ${
+              className={`mb-6 lg:mb-15 text-xl lg:text-2xl xl:text-2xl uppercase tracking-widest ${
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               }`}
             >
@@ -334,19 +334,19 @@ function HeroSection() {
 
             <motion.div
               variants={textVariants}
-              className={`mb-15 text-8xl font-medium ${
+              className={`mb-8 lg:mb-15 text-4xl lg:text-6xl xl:text-7xl font-medium ${
                 isDarkMode ? "text-white" : "text-gray-900"
               }`}
             >
               <motion.h2
                 variants={textVariants}
-                className={`mb-7 ${isDarkMode ? "text-white" : "text-gray-900"}`}
+                className={`mb-4 lg:mb-7 ${isDarkMode ? "text-white" : "text-gray-900"}`}
               >
                 Building digital
               </motion.h2>
               <motion.h2
                 variants={textVariants}
-                className="mb-7 text-blue-500"
+                className="mb-4 lg:mb-7 text-blue-500"
               >
                 experiences
               </motion.h2>
@@ -360,9 +360,9 @@ function HeroSection() {
 
             <motion.p 
               variants={textVariants}
-              className={`text-base md:text-xl mb-15 ${
+              className={`text-base lg:text-lg xl:text-xl mb-8 lg:mb-15 ${
                 isDarkMode ? "text-gray-400" : "text-gray-600"
-              } mb-8 max-w-xl font-light leading-relaxed`}
+              } max-w-xl font-light leading-relaxed`}
             >
               I craft beautiful, functional web applications with modern
               technologies and thoughtful user experience.
@@ -370,13 +370,13 @@ function HeroSection() {
 
             <motion.div 
               variants={itemsVariants}
-              className="flex flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-0"
             >
               <motion.button 
                 whileHover={{ y: -2, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => scrollToSection("work")}
-                className="bg-blue-500 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-600 transition-colors"
+                className="bg-blue-500 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full font-medium hover:bg-blue-600 transition-colors"
               >
                 View Work
               </motion.button>
@@ -386,7 +386,7 @@ function HeroSection() {
                 onClick={() => scrollToSection("contact")}
                 className={`border ${
                   isDarkMode ? "border-gray-700" : "border-gray-300"
-                } px-8 py-4 rounded-full transition-all duration-300 ${
+                } px-6 lg:px-8 py-3 lg:py-4 rounded-full transition-all duration-300 ${
                   isDarkMode
                     ? "text-gray-400 hover:text-white hover:border-gray-600"
                     : "text-gray-600 hover:text-gray-900 hover:border-gray-400"
@@ -398,7 +398,7 @@ function HeroSection() {
 
             <motion.div 
               variants={itemsVariants}
-              className="flex flex-row mt-15 gap-15"
+              className="flex flex-row mt-8 lg:mt-15 gap-6 lg:gap-15 justify-center xl:justify-start"
             >
               {[
                 { icon: FiGithub, href: "https://github.com/yourusername" },
@@ -429,7 +429,7 @@ function HeroSection() {
 
           {/*Right Side - Profile Image + Tech Stack*/}
           <motion.div 
-            className="flex flex-col items-center p-30 mt-40"
+            className="flex flex-col items-center w-full xl:w-1/2 p-4 lg:p-8"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
@@ -437,7 +437,7 @@ function HeroSection() {
             {/* Tech Stack */}
             <motion.div 
               variants={itemsVariants}
-              className="flex flex-row gap-15 mb-20 text-2xl"
+              className="flex flex-wrap justify-center gap-4 lg:gap-8 xl:gap-15 mb-8 lg:mb-12 xl:mb-20 text-lg lg:text-xl xl:text-2xl"
             >
               {[
                 "React",
@@ -467,7 +467,7 @@ function HeroSection() {
               variants={imageVariants}
               className="relative"
             >
-              <div className="relative w-72 h-72 mx-auto">
+              <div className="relative w-48 h-48 lg:w-60 lg:h-60 xl:w-72 xl:h-72 mx-auto">
                 {/* Profile Image */}
                 <motion.div
                   whileHover={{ 
@@ -475,7 +475,7 @@ function HeroSection() {
                     rotate: 2,
                     transition: { duration: 0.3 }
                   }}
-                  className={`w-60 h-60 mx-auto rounded-2xl overflow-hidden border-4 ${
+                  className={`w-40 h-40 lg:w-52 lg:h-52 xl:w-60 xl:h-60 mx-auto rounded-2xl overflow-hidden border-4 ${
                     isDarkMode ? "border-gray-800" : "border-gray-300"
                   } shadow-lg relative z-10 cursor-pointer`}
                 >
@@ -496,7 +496,7 @@ function HeroSection() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="absolute inset-0 w-72 h-72 rounded-2xl border-2 border-dashed border-blue-500/50"
+                  className="absolute inset-0 w-48 h-48 lg:w-60 lg:h-60 xl:w-72 xl:h-72 rounded-2xl border-2 border-dashed border-blue-500/50"
                 />
 
                 {/* Decorative Ring 2 - Outer */}
@@ -509,7 +509,7 @@ function HeroSection() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="absolute -inset-3 w-78 h-78 rounded-2xl border border-dotted border-purple-500/40"
+                  className="absolute -inset-2 lg:-inset-3 w-52 h-52 lg:w-66 lg:h-66 xl:w-78 xl:h-78 rounded-2xl border border-dotted border-purple-500/40"
                 />
               </div>
             </motion.div>
