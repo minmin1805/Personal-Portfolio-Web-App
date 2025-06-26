@@ -63,7 +63,4 @@ export const projects = [{
     githubLink: "https://www.google.com",
     deployedLink: "https://www.google.com",
     technologies: ["React", "Javascript", "Drizzle", "Tailwind", "GeminiAI"],
-},
-{
-    
 }]
