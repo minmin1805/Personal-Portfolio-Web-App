@@ -70,15 +70,15 @@ function SkillSection() {
         >
             TECHNICAL EXPERTISE
         </motion.h2>
-        <motion.div className="flex flex-row mt-10">
+        <motion.div className="flex flex-row mt-10 ">
             <motion.h2
-            className={`${isDarkMode ? "text-white" : "text-gray-900"} text-6xl font-medium`}
+            className={`${isDarkMode ? "text-white" : "text-gray-900"} text-5xl font-medium lg:text-6xl`}
             >
                 Skills & 
             </motion.h2>
 
             <motion.h2
-            className="text-blue-500 text-6xl font-medium"
+            className="text-blue-500 text-5xl font-medium lg:text-6xl"
             >
                 Technologies
             </motion.h2>

@@ -14,6 +14,15 @@ function ProjectSection() {
         >
             FEATURED WORK
         </motion.h2>
+        
+        <motion.div
+        className="flex flex-row mt-2 gap-4"
+        >
+            <h2 className={`${isDarkMode ? "text-white" : "text-gray-900"} text-6xl font-medium`}>Recent</h2>
+            <h2 className='text-6xl font-medium text-blue-500'>Projects</h2>
+        </motion.div>
+
+        <p className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg mt-5`}>A collection of projects that showcase my expertise in building modern web applications and solving complex problems.</p>
 
 
       
