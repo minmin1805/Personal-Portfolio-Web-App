@@ -1,10 +1,18 @@
 import React from 'react'
 import { useTheme } from '../../../context/ThemeContext'
+import { motion } from 'framer-motion'
 
 function ProjectCard({project}) {
     const { isDarkMode } = useTheme()
 
   return (
+    <motion.div
+    whileHover={{ scale: 1.02 }}
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.6 }}
+    transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
+    >
     <div className={`${isDarkMode ? "bg-gray-900" : "bg-white"} border-1 border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden h-90`}>
         <div className="relative w-full h-[60%] group">
             <img 
@@ -42,6 +50,7 @@ function ProjectCard({project}) {
             </div>
         </div>
     </div>
+    </motion.div>
   )
 }
 

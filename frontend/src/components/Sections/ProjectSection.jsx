@@ -19,6 +19,11 @@ function ProjectSection() {
         </motion.h2>
         
         <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.6 }}
+        transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
+
         className="flex flex-row mt-2 gap-4"
         >
             <h2 className={`${isDarkMode ? "text-white" : "text-gray-900"} text-6xl font-medium`}>Recent</h2>
