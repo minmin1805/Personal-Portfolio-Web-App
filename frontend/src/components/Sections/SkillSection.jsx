@@ -70,7 +70,12 @@ function SkillSection() {
         >
             TECHNICAL EXPERTISE
         </motion.h2>
-        <motion.div className="flex flex-row mt-5 ">
+        <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.6 }}
+        transition={{ type: "spring", duration: 0.8, bounce: 0.2 }}
+        className="flex flex-row mt-5 ">
             <motion.h2
             className={`${isDarkMode ? "text-white" : "text-gray-900"} text-5xl font-medium lg:text-6xl`}
             >
