@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaLocationDot, FaPhone } from "react-icons/fa6";
 
-const SERVICE_ID = "service_4f6piqj";
-const TEMPLATE_ID = "template_fea8rcf";
-const PUBLIC_KEY = "4qoSaODZi3_5jBQOf";
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 function GetInTouch() {
   const { isDarkMode } = useTheme();
