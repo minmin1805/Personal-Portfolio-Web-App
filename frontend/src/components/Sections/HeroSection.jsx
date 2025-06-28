@@ -198,7 +198,7 @@ function HeroSection() {
                   <span
                     className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                   >
-                    Building digital
+                    Designing digital
                   </span>
                   <br />
                   <span className="text-blue-500">experiences</span>
@@ -206,7 +206,7 @@ function HeroSection() {
                   <span
                     className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                   >
-                    that matter
+                    that resonate
                   </span>
                 </motion.h1>
 
@@ -216,8 +216,7 @@ function HeroSection() {
                     isDarkMode ? "text-gray-400" : "text-gray-600"
                   } mb-8 max-w-xl mx-auto font-light leading-relaxed`}
                 >
-                  I craft beautiful, functional web applications with modern
-                  technologies and thoughtful user experience.
+                  I develop web experiences that prioritize both technical innovation and human-centered design.
                 </motion.p>
 
                 {/* CTA buttons */}
@@ -280,7 +279,7 @@ function HeroSection() {
                     "Node.js",
                     "MongoDB",
                     "JavaScript",
-                    "TypeScript",
+                    "Java",
                   ].map((tech, index) => (
                     <span
                       key={index}
@@ -344,19 +343,19 @@ function HeroSection() {
                 variants={textVariants}
                 className={`mb-4 lg:mb-7 ${isDarkMode ? "text-white" : "text-gray-900"}`}
               >
-                Building digital
+                Designing digital
               </motion.h2>
               <motion.h2
                 variants={textVariants}
                 className="mb-4 lg:mb-7 text-blue-500"
               >
-                experiences
+                products
               </motion.h2>
               <motion.h2
                 variants={textVariants}
                 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
               >
-                that matter
+                that resonate
               </motion.h2>
             </motion.div>
 
@@ -366,8 +365,7 @@ function HeroSection() {
                 isDarkMode ? "text-gray-400" : "text-gray-600"
               } max-w-xl font-light leading-relaxed`}
             >
-              I craft beautiful, functional web applications with modern
-              technologies and thoughtful user experience.
+              I develop web experiences that prioritize both technical innovation and human-centered design.
             </motion.p>
 
             <motion.div 

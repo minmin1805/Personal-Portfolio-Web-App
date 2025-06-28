@@ -18,9 +18,6 @@ function AboutMe() {
                 About <span className='text-blue-500'>Me</span>
             </motion.h2>
             <motion.div className='flex flex-col gap-4 items-center justify-center h-full' >
-                <motion.h2 className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-lg`}>
-                    I'm a software engineer with a passion for building web applications.
-                </motion.h2>
             </motion.div>
 
             <div className="flex flex-col items-center mt-10">

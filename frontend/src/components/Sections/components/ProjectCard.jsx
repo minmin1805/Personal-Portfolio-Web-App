@@ -15,13 +15,18 @@ function ProjectCard({project}) {
     >
     <div className={`${isDarkMode ? "bg-gray-900" : "bg-white"} border-1 border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden h-90`}>
         <div className="relative w-full h-[60%] group">
-            <img 
-                src={project.image} 
-                alt={project.name} 
-                className="w-full h-full object-cover rounded-t-2xl transition-all duration-300 group-hover:blur-sm" 
+            <video
+                src={project.video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover rounded-t-2xl transition-all duration-300 group-hover:blur-sm pointer-events-none"
             />
             <div className="absolute inset-0 rounded-t-2xl bg-black/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none"></div>
             <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                
+                {project.deployedLink && (
                 <a
                     href={project.deployedLink}
                     target="_blank"
@@ -30,6 +35,7 @@ function ProjectCard({project}) {
                 >
                     Live Demo
                 </a>
+                )}
                 <a
                     href={project.githubLink}
                     target="_blank"
