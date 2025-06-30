@@ -8,6 +8,7 @@ import lightVideo from  "../assets/projectVideos/light.mp4"
 import threeVideo from "../assets/projectVideos/threetrios.mp4"
 import minesVideo from "../assets/projectVideos/mine.mp4"
 import synapseVideo from "../assets/projectVideos/synapse.mp4"
+import vibelearningVideo from "../assets/projectVideos/vibelearning.mp4"
 
 export const projects = [{
     id: 1,
@@ -24,7 +25,7 @@ export const projects = [{
     name: "Vibe-Learning Application",
     description: "A modern learning application built with React, Tailwind, and Vite.",
     image: vibeLearningImage,
-    video: null,
+    video: vibelearningVideo,
     githubLink: "https://github.com/minmin1805/vibe-learning-app",
     deployedLink: "https://www.google.com",
     technologies: ["React", "Javascript", "MongoDB", "Tailwind", "OpenAI"],
@@ -52,7 +53,7 @@ export const projects = [{
 {
     id: 5,
     name: "Light Em All Maze Generation",
-    description: "A modern maze generation application built with React, Tailwind, and Vite.",
+    description: "A maze generation application built with Java",
     image: "https://via.placeholder.com/150",
     video: lightVideo,
     githubLink: "https://github.com/minmin1805/Light-Em-All-Maze-Game",
@@ -62,7 +63,7 @@ export const projects = [{
 {
     id: 6,
     name: "Three Trios",
-    description: "A modern three-dimensional game built with React, Tailwind, and Vite.",
+    description: "A card game built with Java",
     image: "https://via.placeholder.com/150",
     video: threeVideo,
     githubLink: "https://github.com/minmin1805/ThreeTrios",
@@ -72,7 +73,7 @@ export const projects = [{
 {
     id: 7,
     name: "Minesweeper",
-    description: "A modern minesweeper game built with React, Tailwind, and Vite.",
+    description: "A minesweeper game built Java",
     image: "https://via.placeholder.com/150",
     video: minesVideo,
     githubLink: "https://github.com/minmin1805/Minesweeper-Java-Game",
