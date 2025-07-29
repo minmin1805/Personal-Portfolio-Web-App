@@ -27,7 +27,7 @@ export const projects = [{
     image: vibeLearningImage,
     video: vibelearningVideo,
     githubLink: "https://github.com/minmin1805/vibe-learning-app",
-    deployedLink: "https://www.google.com",
+    deployedLink: "https://vibe-learning-prod.onrender.com",
     technologies: ["React", "Javascript", "MongoDB", "Tailwind", "OpenAI"],
 },
 {
