@@ -9,15 +9,16 @@ import threeVideo from "../assets/projectVideos/threetrios.mp4"
 import minesVideo from "../assets/projectVideos/mine.mp4"
 import synapseVideo from "../assets/projectVideos/synapse.mp4"
 import vibelearningVideo from "../assets/projectVideos/vibelearning.mp4"
+import ecommmerceVideo from "../assets/projectVideos/ecommerce.mp4"
 
 export const projects = [{
     id: 1,
     name: "E-Commerce Website",
     description: "A modern e-commerce website built with React, Tailwind, and Vite.",
     image: ecommmercewebImage,
-    video: null,
+    video: ecommmerceVideo,
     githubLink: "https://github.com/minmin1805/e-commerce-app",
-    deployedLink: "https://www.google.com",
+    deployedLink: "https://e-commerce-app-a6op.onrender.com/",
     technologies: ["React", "Javascript", "MongoDB", "Tailwind", "Upstash"],
 },
 {
