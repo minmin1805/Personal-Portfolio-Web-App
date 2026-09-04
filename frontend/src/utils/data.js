@@ -13,7 +13,7 @@ import ecommmerceVideo from "../assets/projectVideos/ecommerce.mp4"
 
 export const projects = [{
     id: 1,
-    name: "E-Commerce Website",
+    name: "E-Commerce Website", 
     description: "A modern e-commerce website built with React, Tailwind, and Vite.",
     image: ecommmercewebImage,
     video: ecommmerceVideo,
